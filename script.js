@@ -1,5 +1,6 @@
 function calculateMinCost() {
   //your code here
+	
       let input=document.getElementById("rope-lengths");
     let val=input.value;
 //console.log( val);
@@ -22,7 +23,7 @@ function calculateMinCost() {
         tot=tot+ar[i];
         sum=tot+sum;
     }
-	const resu=document.getElementByid("result");
+	const resu=document.getElementById("result");
 	resu.innerText=sum;
   
   
