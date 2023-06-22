@@ -1,7 +1,20 @@
 function calculateMinCost() {
   //your code here
-	
+	/*
       let input=document.getElementById("rope-lengths");
+    let val=input.value;
+//console.log( val);
+       let Pq=new PriorityQueue();
+    
+	for(let i=0;i<val.length;i++){
+      if(val[i]!=','){
+       Pq.add(val[i]);     
+    }}
+	let sum=Pq.length();
+	let bag=30;
+    let r=document.getElementById("result");
+	r.innerText=bag;  */
+  let input=document.getElementById("rope-lengths");
     let val=input.value;
 //console.log( val);
     let ar=[];
@@ -23,6 +36,10 @@ function calculateMinCost() {
         tot=tot+ar[i];
         sum=tot+sum;
     }
+    console.log(sum);
+    const resu=document.getElementById("result");
+	resu.innerText=sum;     
+}
 	const resu=document.getElementById("result");
 	resu.innerText=sum;
   
