@@ -40,5 +40,7 @@ function calculateMinCost() {
     //console.log(sum);
     const resu=document.getElementById("result");
 	resu.innerText=sum;     
-  
 }  
+
+
+module.exports = calculateMinCost;
