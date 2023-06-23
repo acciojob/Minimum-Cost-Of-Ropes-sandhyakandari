@@ -26,6 +26,4 @@ function calculateMinCost() {
     const resu=document.getElementById("result");
 	resu.innerText=sum;     
 }  
-
-
 module.exports = calculateMinCost;
