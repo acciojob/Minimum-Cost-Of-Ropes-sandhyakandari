@@ -30,14 +30,14 @@ function calculateMinCost() {
     }}
 	let sum=0;
        while(ar.length>1){
-         ar.sort();
+        ar.sort((a,b)=>a-b);
 		   let a=ar.shift();
 		  let b=ar.shift();
 		sum=sum+a+b;
 		   ar.push(a+b);
 		
     }
-    console.log(sum);
+    //console.log(sum);
     const resu=document.getElementById("result");
 	resu.innerText=sum;     
   
