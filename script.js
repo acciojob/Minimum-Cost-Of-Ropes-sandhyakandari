@@ -27,21 +27,18 @@ function calculateMinCost() {
       i++;
     }
     ar.push(m);
-
     }}
-    ar.sort((a,b)=>a-b);
-    let tot=ar[0];
-    let sum=0;
-    for(let i=1;i<ar.length;i++){
-        tot=tot+ar[i];
-        sum=tot+sum;
+	let sum=0;
+       while(ar.length>1){
+         ar.sort();
+		   let a=ar.shift();
+		  let b=ar.shift();
+		sum=sum+a+b;
+		   ar.push(a+b);
+		
     }
     console.log(sum);
     const resu=document.getElementById("result");
 	resu.innerText=sum;     
-}
-	const resu=document.getElementById("result");
-	resu.innerText=sum;
-  
   
 }  
