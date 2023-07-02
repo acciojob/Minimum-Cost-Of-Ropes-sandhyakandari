@@ -1,4 +1,4 @@
-function calculateMinCost() {
+ function calculateMinCost() {
   let input=document.getElementById("rope-lengths");
     let val=input.value;
 //console.log( val);
